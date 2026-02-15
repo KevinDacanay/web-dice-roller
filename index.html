@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>D&D Dice Roller</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body onload="rollDice()">
+	<header>
+		<h1>Dungeons & Dragons Dice Roller</h1>
+		<p>
+			This application simulates rolling a 20-sided die (D20) used in Dungeons & Dragons.
+			Click the <strong>Roll D20</strong> button or press <strong>Enter</strong> 
+			to roll the die again.
+		</p>
+			<a href="https://www.dndbeyond.com/en/how-to-play-dnd?srsltid=AfmBOoqKFL6sh9fuVu1Hx3SSPfZj22dbEIbPyfDPnPPhYFYq2ZHFP-qx">How to play D&D</a>
+	</header>
+
+	<section id="dice-roll">
+		<button id="roll-button" onclick="rollDice()" autofocus>Roll Dice</button>
+		<div id="dice-results">
+		</div>
+	</section>
+
+	<footer>
+		<p>May the dice be ever in your favor.</p>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
