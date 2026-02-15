@@ -1,0 +1,109 @@
+body {
+    font-family: 'Cinzel', serif;
+    background-color: #2a2a2a;
+    color: #f1c40f;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/***********************************************************/
+header {
+    background-color: #333;
+    padding: 20px;
+    border-bottom: 3px solid #f1c40f;
+}
+header a {
+    text-decoration: none;
+    color: #f1c40f;
+}
+header a:hover {
+    color: #f39c12;
+}
+h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+p {
+    font-size: 1.2em;
+    margin-top: -10px;
+}
+
+/***********************************************************/
+footer {
+    background-color: #333;
+    color: #f1c40f;
+    padding: 20px;
+    font-size: 1em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/***********************************************************/
+button {
+    background-color: #c0392b;
+    color: white;
+    font-size: 1.5em;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.1s ease;
+    margin-top: 20px;
+    box-shadow: 0px 6px 0 #922b21;
+}
+button:hover {
+    background-color: #e74c3c;
+}
+button:active {
+    transform: translateY(4px);
+    box-shadow: 0 2px 0 #922b21;
+}
+
+/***********************************************************/
+#dice-results {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.dice-result {
+    font-size: 2em;
+    background: #f39c12;
+    padding: 10px;
+    border-radius: 8px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+.dice-result {
+    font-size: 2em;
+    background: #f39c12;
+    width: 80px;
+    height: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: bold;
+    color: black;
+
+    clip-path: polygon(
+        25% 0%, 
+        75% 0%, 
+        100% 50%, 
+        75% 100%, 
+        25% 100%, 
+        0% 50%
+    );
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
