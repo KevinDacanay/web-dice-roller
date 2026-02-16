@@ -5,6 +5,9 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /***********************************************************/
@@ -35,11 +38,8 @@ footer {
     background-color: #333;
     color: #f1c40f;
     padding: 20px;
-    margin-top: 20px;
+    margin-top: auto;
     font-size: 1em;
-    position: relative;
-    width: 100%;
-    bottom: 0;
 }
 
 /***********************************************************/
@@ -70,19 +70,7 @@ button:active {
     justify-content: center;
     align-items: center;
     gap: 20px;
-}
-.dice-result {
-    font-size: 2em;
-    background: #f39c12;
-    padding: 10px;
-    border-radius: 8px;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 40px;
 }
 .dice-result {
     font-size: 2em;
