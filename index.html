@@ -1,28 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- 
+	Author: Kevin Dacanay 
+    CPSC 44000 - Software Engineering
+    Project: Web Portfolio
+	-->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>D&D Dice Roller</title>
 	<link rel="stylesheet" href="style.css">
 </head>
+
+<!-- Automatically call rollDice() func when page loads -->
 <body onload="rollDice()">
+
+	<!-- Header Section -->
 	<header>
 		<h1>Dungeons & Dragons Dice Roller</h1>
 		<p>
 			This application simulates rolling a 20-sided die (D20) used in Dungeons & Dragons.
+		</p>
+		<p>
+			D20 determine the success or failure of your actions like attacks, skill checks, 
+			and saving throws. Players roll it to see if their character succeeds.
+		</p>
+		<p>
 			Click the <strong>Roll D20</strong> button or press <strong>Enter</strong> 
 			to roll the die again.
 		</p>
-			<a href="https://www.dndbeyond.com/en/how-to-play-dnd?srsltid=AfmBOoqKFL6sh9fuVu1Hx3SSPfZj22dbEIbPyfDPnPPhYFYq2ZHFP-qx">How to play D&D</a>
+			<a href="https://www.dndbeyond.com/en/how-to-play-dnd?srsltid=AfmBOoqKFL6sh9fuVu1Hx3SSPfZj22dbEIbPyfDPnPPhYFYq2ZHFP-qx">
+				- How to play D&D -
+			</a>
 	</header>
 
+	<!-- Dice Roll Section -->
 	<section id="dice-roll">
+		<!-- autofocus on button so it responds to keyboard inputs (enter) -->
 		<button id="roll-button" onclick="rollDice()" autofocus>Roll Dice</button>
 		<div id="dice-results">
 		</div>
 	</section>
 
+	<!-- Footer Section -->
 	<footer>
 		<p>May the dice be ever in your favor.</p>
 	</footer>
