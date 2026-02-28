@@ -1,5 +1,4 @@
-// Configuration: Update this URL to your deployed Azure App Service URL
-const API_BASE_URL = "http://localhost:3000"; 
+const API_BASE_URL = "https://web-dice-roller-server-g3g9e4e5fecyehh3.canadacentral-01.azurewebsites.net/"; 
 
 // Initialize: Wake up server and perform initial roll
 function initialize() {
