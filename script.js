@@ -1,4 +1,4 @@
-const API_BASE_URL = "https://web-dice-roller-server-g3g9e4e5fecyehh3.canadacentral-01.azurewebsites.net/"; 
+const API_BASE_URL = "https://web-dice-roller-server-g3g9e4e5fecyehh3.canadacentral-01.azurewebsites.net"; 
 
 // Initialize: Wake up server and perform initial roll
 function initialize() {
