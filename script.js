@@ -10,7 +10,8 @@ function initialize() {
 async function wakeUpServer() {
     try {
         console.log("Waking up server...");
-        await fetch(`${API_BASE_URL}/api/wakeup`);
+        const response = await fetch(`${API_BASE_URL}/api/wakeup`);
+        if (!response.ok) throw new Error(`Server returned status: ${response.status}`);
         console.log("Server is awake.");
     } catch (error) {
         console.warn("Server wake-up check failed (might be offline or CORS error):", error);
