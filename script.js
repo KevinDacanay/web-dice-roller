@@ -14,7 +14,7 @@ async function wakeUpServer() {
         if (!response.ok) throw new Error(`Server returned status: ${response.status}`);
         console.log("Server is awake.");
     } catch (error) {
-        console.warn("Server wake-up check failed (might be offline or CORS error):", error);
+        console.warn("Server wake-up failed:", error);
     }
 }
 
@@ -39,9 +39,9 @@ async function rollDice(sides = 20) {
 async function demonstrateCorsFailure() {
     try {
         await fetch(`${API_BASE_URL}/api/cors-fail`);
-        alert("Unexpected: Request succeeded (CORS did not fail).");
+        alert("CORS Request succeeded.");
     } catch (error) {
-        alert("Success: CORS Failure demonstrated! Check console for 'Access-Control-Allow-Origin' error.");
-        console.log("CORS Failure captured:", error);
+        alert("Success: CORS Fail demonstrated.");
+        console.log("CORS Fail", error);
     }
 }
